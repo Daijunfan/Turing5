@@ -1,0 +1,72 @@
+{
+  "local_rotation_counterexample": {
+    "global_optimum": 7,
+    "local_trap": 8,
+    "best_one_rotation": 8
+  },
+  "asymptotic_separation": [
+    {
+      "H": 2,
+      "work_ratio": 1.125,
+      "peak_ratio": 1.6666666666666667,
+      "dynamic_static_over_morph": 0.9310344827586207
+    },
+    {
+      "H": 4,
+      "work_ratio": 2.03125,
+      "peak_ratio": 3.4,
+      "dynamic_static_over_morph": 1.6169154228855722
+    },
+    {
+      "H": 8,
+      "work_ratio": 4.0078125,
+      "peak_ratio": 7.222222222222222,
+      "dynamic_static_over_morph": 2.972955569864778
+    },
+    {
+      "H": 16,
+      "work_ratio": 8.001953125,
+      "peak_ratio": 15.117647058823529,
+      "dynamic_static_over_morph": 5.652869085301518
+    },
+    {
+      "H": 32,
+      "work_ratio": 16.00048828125,
+      "peak_ratio": 31.060606060606062,
+      "dynamic_static_over_morph": 10.993066921489493
+    },
+    {
+      "H": 64,
+      "work_ratio": 32.0001220703125,
+      "peak_ratio": 63.03076923076923,
+      "dynamic_static_over_morph": 21.663195861478005
+    },
+    {
+      "H": 128,
+      "work_ratio": 64.00003051757812,
+      "peak_ratio": 127.01550387596899,
+      "dynamic_static_over_morph": 42.99826406576397
+    },
+    {
+      "H": 256,
+      "work_ratio": 128.00000762939453,
+      "peak_ratio": 255.00778210116732,
+      "dynamic_static_over_morph": 85.66579863320392
+    },
+    {
+      "H": 512,
+      "work_ratio": 256.00000190734863,
+      "peak_ratio": 511.0038986354776,
+      "dynamic_static_over_morph": 170.99956597498277
+    }
+  ],
+  "live_versioned_cutover": {
+    "tasks": 10000,
+    "cutovers": 499,
+    "versions": 500,
+    "lost": 0,
+    "duplicates": 0,
+    "semantic_mismatches": 0
+  },
+  "status": "all independent Python assertions passed"
+}

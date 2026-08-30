@@ -1,0 +1,41 @@
+{
+  "independent_implementation": true,
+  "legacy_free_initial_only_for_regression": true,
+  "tree_count": 42,
+  "static_pareto": [
+    {
+      "name": "A(B((C(DE))F))",
+      "work": 220,
+      "peak": 60
+    },
+    {
+      "name": "(A(B(C(DE))))F",
+      "work": 129,
+      "peak": 64
+    },
+    {
+      "name": "(AB)((C(DE))F)",
+      "work": 128,
+      "peak": 67
+    }
+  ],
+  "all_states_optimum": "2325.6",
+  "static_pareto_optimum": "2497.6",
+  "relative_gap_exact": "21500/2907",
+  "relative_gap_percent_exact_decimal": "7.3959408324733402132782937736498108015135878912969",
+  "relative_gap_percent_legacy_display": "7.395940832473341",
+  "all_states_path": [
+    "A((B(C(DE)))F)",
+    "A((B(C(DE)))F)",
+    "A((B(C(DE)))F)",
+    "(A(B(C(DE))))F",
+    "(A(B(C(DE))))F",
+    "(A(B(C(DE))))F",
+    "(A(B(C(DE))))F",
+    "(A(B(C(DE))))F",
+    "(A(B(C(DE))))F",
+    "(A(B(C(DE))))F",
+    "(A(B(C(DE))))F",
+    "A((B(C(DE)))F)"
+  ]
+}

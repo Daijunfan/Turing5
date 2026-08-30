@@ -1,0 +1,39 @@
+{
+  "domain": {
+    "model": "legacy split-distance regression model",
+    "matrix_count": [
+      5,
+      5
+    ],
+    "dimension_values": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "all_catalan_trees": true,
+    "all_distinct_tree_peak_budgets": true,
+    "horizons": [
+      1,
+      6
+    ],
+    "arithmetic": "fractions.Fraction",
+    "initial_state": "explicit empty-split source with charged construction"
+  },
+  "instances": 4096,
+  "failures": 0,
+  "dynamic_equivalence_rate": 1.0,
+  "reachable_residual_states_checked": 424804,
+  "minimum_kernel_instances": 0,
+  "full_state_histogram": {
+    "14": 4096
+  },
+  "kernel_size_histogram": {
+    "1": 3744,
+    "2": 350,
+    "3": 2
+  },
+  "first_nontrivial_instances": [],
+  "wall_seconds": 533.2757675829926,
+  "scope_warning": "This exhaustive grid validates the exact TCMK machinery but uses the legacy split-distance model; final empirical claims use real_migration.py."
+}

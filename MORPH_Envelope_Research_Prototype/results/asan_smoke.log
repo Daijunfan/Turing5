@@ -1,0 +1,3 @@
+[1/6] correctness suite
+  exhaustive=5440 random=12 oracle_trees=64624 certificates=5869 semantic_evals=255 failures=0
+ALL_TESTS_PASSED

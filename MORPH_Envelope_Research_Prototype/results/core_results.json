@@ -1,0 +1,31 @@
+{
+  "tests": {"exhaustive_instances": 21824, "random_instances": 360, "oracle_parenthesizations": 990088, "certificate_checks": 24214, "semantic_plan_evaluations": 6338, "failures": 0},
+  "local_rotation_counterexample": {"dims": [1,1,1,2,2], "local_stable_work": 8, "global_optimum_work": 7},
+  "scaling": [
+    {"n": 16, "basis": 7, "compile_ms": 0.081084, "lookup_ns": 13.680625, "min_peak": 1057, "max_peak": 2112, "low_memory_work": 4238518, "minimum_work": 323828, "work_ratio": 13.0887940512, "log10_parenthesizations": 6.98654087002},
+    {"n": 32, "basis": 7, "compile_ms": 1.226458, "lookup_ns": 14.207125, "min_peak": 1088, "max_peak": 2112, "low_memory_work": 8477519, "minimum_work": 648167, "work_ratio": 13.0792203244, "log10_parenthesizations": 16.1627028581},
+    {"n": 48, "basis": 12, "compile_ms": 6.512667, "lookup_ns": 14.785291, "min_peak": 1088, "max_peak": 2113, "low_memory_work": 12716535, "minimum_work": 972506, "work_ratio": 13.0760478599, "log10_parenthesizations": 25.529799473},
+    {"n": 64, "basis": 12, "compile_ms": 23.837209, "lookup_ns": 14.844417, "min_peak": 1088, "max_peak": 2113, "low_memory_work": 16955551, "minimum_work": 1296845, "work_ratio": 13.0744622526, "log10_parenthesizations": 34.9744925822},
+    {"n": 96, "basis": 12, "compile_ms": 161.886333, "lookup_ns": 14.137542, "min_peak": 1088, "max_peak": 2113, "low_memory_work": 25433583, "minimum_work": 1945523, "work_ratio": 13.0728770618, "log10_parenthesizations": 53.9754197667},
+    {"n": 128, "basis": 12, "compile_ms": 583.080375, "lookup_ns": 14.664, "min_peak": 1088, "max_peak": 2113, "low_memory_work": 33911615, "minimum_work": 2594201, "work_ratio": 13.0720846226, "log10_parenthesizations": 73.0535046781}
+  ],
+  "planning_reuse": {"compile_once_ms": 0, "compile_three_times_ms": 0, "reuse_speedup_for_three_epochs": 0},
+  "dynamic": [
+  ],
+  "random_fallback": [
+    {"n": 16, "seeds": 300, "fraction_multiple_morphologies": 0.343333333333, "mean_basis": 1.47666666667, "max_basis": 7, "median_endpoint_work_ratio": 1, "max_endpoint_work_ratio": 9.40545698735},
+    {"n": 32, "seeds": 200, "fraction_multiple_morphologies": 0.29, "mean_basis": 1.365, "max_basis": 6, "median_endpoint_work_ratio": 1, "max_endpoint_work_ratio": 6.03003141796},
+    {"n": 48, "seeds": 80, "fraction_multiple_morphologies": 0.2625, "mean_basis": 1.4, "max_basis": 7, "median_endpoint_work_ratio": 1, "max_endpoint_work_ratio": 3.40901319539}
+  ],
+  "asymptotic_separation": [
+    {"H": 2, "low_memory_work": 36, "high_memory_work": 32, "low_peak": 6, "high_peak": 10, "work_ratio": 1.125, "peak_ratio": 1.66666666667, "dynamic_static_over_morph": 0.931034482759},
+    {"H": 4, "low_memory_work": 1040, "high_memory_work": 512, "low_peak": 20, "high_peak": 68, "work_ratio": 2.03125, "peak_ratio": 3.4, "dynamic_static_over_morph": 1.61691542289},
+    {"H": 8, "low_memory_work": 32832, "high_memory_work": 8192, "low_peak": 72, "high_peak": 520, "work_ratio": 4.0078125, "peak_ratio": 7.22222222222, "dynamic_static_over_morph": 2.97295556986},
+    {"H": 16, "low_memory_work": 1048832, "high_memory_work": 131072, "low_peak": 272, "high_peak": 4112, "work_ratio": 8.001953125, "peak_ratio": 15.1176470588, "dynamic_static_over_morph": 5.6528690853},
+    {"H": 32, "low_memory_work": 33555456, "high_memory_work": 2097152, "low_peak": 1056, "high_peak": 32800, "work_ratio": 16.0004882812, "peak_ratio": 31.0606060606, "dynamic_static_over_morph": 10.9930669215},
+    {"H": 64, "low_memory_work": 1073745920, "high_memory_work": 33554432, "low_peak": 4160, "high_peak": 262208, "work_ratio": 32.0001220703, "peak_ratio": 63.0307692308, "dynamic_static_over_morph": 21.6631958615},
+    {"H": 128, "low_memory_work": 34359754752, "high_memory_work": 536870912, "low_peak": 16512, "high_peak": 2097280, "work_ratio": 64.0000305176, "peak_ratio": 127.015503876, "dynamic_static_over_morph": 42.9982640658},
+    {"H": 256, "low_memory_work": 1099511693312, "high_memory_work": 8589934592, "low_peak": 65792, "high_peak": 16777472, "work_ratio": 128.000007629, "peak_ratio": 255.007782101, "dynamic_static_over_morph": 85.6657986332},
+    {"H": 512, "low_memory_work": 35184372350976, "high_memory_work": 137438953472, "low_peak": 262656, "high_peak": 134218240, "work_ratio": 256.000001907, "peak_ratio": 511.003898635, "dynamic_static_over_morph": 170.999565975}
+  ]
+}
