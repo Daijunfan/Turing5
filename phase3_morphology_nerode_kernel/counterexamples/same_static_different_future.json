@@ -1,0 +1,20 @@
+{
+  "type": "same_static_metrics_different_future",
+  "dims": [
+    1,
+    1,
+    1,
+    1
+  ],
+  "left": "A(BC)",
+  "right": "(AB)C",
+  "work_peak": [
+    2,
+    2
+  ],
+  "distinguishing_suffix": [
+    "update_0"
+  ],
+  "left_cost": "6",
+  "right_cost": "10"
+}

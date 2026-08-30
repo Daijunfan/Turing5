@@ -1,0 +1,13 @@
+explicit_automaton exact_total=0
+residual_closure states=4 transitions=8 unprocessed=0
+morph_n_compiler exhaustive_words=256 status=pass
+interval_pricing exact_min_work=52
+persistent_matrix associativity=pass
+dag_runtime operators=998 correctness=pass
+explicit_automaton exact_total=0
+residual_closure states=4 transitions=8 unprocessed=0
+morph_n_compiler exhaustive_words=256 status=pass
+interval_pricing exact_min_work=52
+persistent_matrix associativity=pass
+dag_runtime operators=998 correctness=pass
+sanitizer runs completed

@@ -1,0 +1,13 @@
+{
+  "type": "K_H_fails_at_H_plus_1",
+  "H": 1,
+  "failed_horizon": 2,
+  "kernel": [
+    "((A(BC))D)E"
+  ],
+  "witness": [
+    "update_1",
+    "update_2"
+  ],
+  "gap": "90"
+}

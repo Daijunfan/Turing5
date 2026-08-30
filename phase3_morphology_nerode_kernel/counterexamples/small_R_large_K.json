@@ -1,0 +1,14 @@
+{
+  "type": "behavior_kernel_small_execution_kernel_large",
+  "H": 6,
+  "K": 6,
+  "R": 1,
+  "executable_kernel": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ]
+}

@@ -1,0 +1,411 @@
+{
+  "stage": "MORPH-N: infinite-horizon dual-kernel morphology compilation",
+  "final_judgment": "partially_supported",
+  "supported": [
+    "exact reduction to a min-plus weighted automaton",
+    "infinite residual closure for the explicit 14-architecture nonbinding-budget matrix model",
+    "independent closure certificate replay",
+    "exact fixed-predecessor interval pricing through n=64",
+    "all actual matrix and DAG outputs equal references"
+  ],
+  "partially_supported": [
+    "dual-kernel compiler for finite explicit H with a finite closure",
+    "implicit column generation: only fixed-predecessor pricing is globally exact"
+  ],
+  "falsified": [
+    "phase2's 2,279,080 states were an infinite fixed-point closure",
+    "finite normalized residual closure exists for every model",
+    "infinite MORPH-N controller exists for the budgeted shared-DAG experiment",
+    "MORPH-N achieves a 1.5x wall-clock gain in the second domain"
+  ],
+  "explicit": {
+    "schema": "morphn.explicit-closure.v1",
+    "dims": [
+      1,
+      2,
+      4,
+      1,
+      6,
+      6
+    ],
+    "H": 14,
+    "K": 4,
+    "R": 56,
+    "raw_residuals": 218,
+    "ratios": {
+      "R_over_H": 4.0,
+      "K_over_H": 0.2857142857142857,
+      "K_over_R": 0.07142857142857142
+    },
+    "executable_kernel": [
+      "(A(BC))(DE)",
+      "((AB)C)(DE)",
+      "((A(BC))D)E",
+      "(((AB)C)D)E"
+    ],
+    "finite_column_difference_bound": 435,
+    "closure": {
+      "queue_empty": true,
+      "unprocessed": 0,
+      "states": 218,
+      "transitions": 1090,
+      "digest": "8f8ca646dbb91524f2b1bca12749bd27de04990807063ccbbf51d7474e54246f"
+    },
+    "horizon_rows": [
+      {
+        "horizon": 1,
+        "kernel_size": 1,
+        "members": [
+          "((A(BC))D)E"
+        ],
+        "added_bridges": [
+          "((A(BC))D)E"
+        ],
+        "worst_gap": "0",
+        "changed_from_previous": false,
+        "minimality_scope": "minimum cardinality among subsets of K_infinity"
+      },
+      {
+        "horizon": 2,
+        "kernel_size": 3,
+        "members": [
+          "(A(BC))(DE)",
+          "((AB)C)(DE)",
+          "((A(BC))D)E"
+        ],
+        "added_bridges": [
+          "((AB)C)(DE)",
+          "(A(BC))(DE)"
+        ],
+        "worst_gap": "0",
+        "changed_from_previous": true,
+        "minimality_scope": "minimum cardinality among subsets of K_infinity"
+      },
+      {
+        "horizon": 3,
+        "kernel_size": 3,
+        "members": [
+          "(A(BC))(DE)",
+          "((AB)C)(DE)",
+          "((A(BC))D)E"
+        ],
+        "added_bridges": [],
+        "worst_gap": "0",
+        "changed_from_previous": false,
+        "minimality_scope": "minimum cardinality among subsets of K_infinity"
+      },
+      {
+        "horizon": 4,
+        "kernel_size": 4,
+        "members": [
+          "(A(BC))(DE)",
+          "((AB)C)(DE)",
+          "((A(BC))D)E",
+          "(((AB)C)D)E"
+        ],
+        "added_bridges": [
+          "(((AB)C)D)E"
+        ],
+        "worst_gap": "0",
+        "changed_from_previous": true,
+        "minimality_scope": "minimum cardinality among subsets of K_infinity"
+      },
+      {
+        "horizon": 5,
+        "kernel_size": 4,
+        "members": [
+          "(A(BC))(DE)",
+          "((AB)C)(DE)",
+          "((A(BC))D)E",
+          "(((AB)C)D)E"
+        ],
+        "added_bridges": [],
+        "worst_gap": "0",
+        "changed_from_previous": false,
+        "minimality_scope": "minimum cardinality among subsets of K_infinity"
+      },
+      {
+        "horizon": 6,
+        "kernel_size": 4,
+        "members": [
+          "(A(BC))(DE)",
+          "((AB)C)(DE)",
+          "((A(BC))D)E",
+          "(((AB)C)D)E"
+        ],
+        "added_bridges": [],
+        "worst_gap": "0",
+        "changed_from_previous": false,
+        "minimality_scope": "minimum cardinality among subsets of K_infinity"
+      },
+      {
+        "horizon": 7,
+        "kernel_size": 4,
+        "members": [
+          "(A(BC))(DE)",
+          "((AB)C)(DE)",
+          "((A(BC))D)E",
+          "(((AB)C)D)E"
+        ],
+        "added_bridges": [],
+        "worst_gap": "0",
+        "changed_from_previous": false,
+        "minimality_scope": "minimum cardinality among subsets of K_infinity"
+      },
+      {
+        "horizon": 8,
+        "kernel_size": 4,
+        "members": [
+          "(A(BC))(DE)",
+          "((AB)C)(DE)",
+          "((A(BC))D)E",
+          "(((AB)C)D)E"
+        ],
+        "added_bridges": [],
+        "worst_gap": "0",
+        "changed_from_previous": false,
+        "minimality_scope": "minimum cardinality among subsets of K_infinity"
+      },
+      {
+        "horizon": 9,
+        "kernel_size": 4,
+        "members": [
+          "(A(BC))(DE)",
+          "((AB)C)(DE)",
+          "((A(BC))D)E",
+          "(((AB)C)D)E"
+        ],
+        "added_bridges": [],
+        "worst_gap": "0",
+        "changed_from_previous": false,
+        "minimality_scope": "minimum cardinality among subsets of K_infinity"
+      },
+      {
+        "horizon": 10,
+        "kernel_size": 4,
+        "members": [
+          "(A(BC))(DE)",
+          "((AB)C)(DE)",
+          "((A(BC))D)E",
+          "(((AB)C)D)E"
+        ],
+        "added_bridges": [],
+        "worst_gap": "0",
+        "changed_from_previous": false,
+        "minimality_scope": "minimum cardinality among subsets of K_infinity"
+      },
+      {
+        "horizon": 11,
+        "kernel_size": 4,
+        "members": [
+          "(A(BC))(DE)",
+          "((AB)C)(DE)",
+          "((A(BC))D)E",
+          "(((AB)C)D)E"
+        ],
+        "added_bridges": [],
+        "worst_gap": "0",
+        "changed_from_previous": false,
+        "minimality_scope": "minimum cardinality among subsets of K_infinity"
+      },
+      {
+        "horizon": 12,
+        "kernel_size": 4,
+        "members": [
+          "(A(BC))(DE)",
+          "((AB)C)(DE)",
+          "((A(BC))D)E",
+          "(((AB)C)D)E"
+        ],
+        "added_bridges": [],
+        "worst_gap": "0",
+        "changed_from_previous": false,
+        "minimality_scope": "minimum cardinality among subsets of K_infinity"
+      },
+      {
+        "horizon": 13,
+        "kernel_size": 4,
+        "members": [
+          "(A(BC))(DE)",
+          "((AB)C)(DE)",
+          "((A(BC))D)E",
+          "(((AB)C)D)E"
+        ],
+        "added_bridges": [],
+        "worst_gap": "0",
+        "changed_from_previous": false,
+        "minimality_scope": "minimum cardinality among subsets of K_infinity"
+      },
+      {
+        "horizon": 14,
+        "kernel_size": 4,
+        "members": [
+          "(A(BC))(DE)",
+          "((AB)C)(DE)",
+          "((A(BC))D)E",
+          "(((AB)C)D)E"
+        ],
+        "added_bridges": [],
+        "worst_gap": "0",
+        "changed_from_previous": false,
+        "minimality_scope": "minimum cardinality among subsets of K_infinity"
+      },
+      {
+        "horizon": 15,
+        "kernel_size": 4,
+        "members": [
+          "(A(BC))(DE)",
+          "((AB)C)(DE)",
+          "((A(BC))D)E",
+          "(((AB)C)D)E"
+        ],
+        "added_bridges": [],
+        "worst_gap": "0",
+        "changed_from_previous": false,
+        "minimality_scope": "minimum cardinality among subsets of K_infinity"
+      },
+      {
+        "horizon": 16,
+        "kernel_size": 4,
+        "members": [
+          "(A(BC))(DE)",
+          "((AB)C)(DE)",
+          "((A(BC))D)E",
+          "(((AB)C)D)E"
+        ],
+        "added_bridges": [],
+        "worst_gap": "0",
+        "changed_from_previous": false,
+        "minimality_scope": "minimum cardinality among subsets of K_infinity"
+      },
+      {
+        "horizon": 17,
+        "kernel_size": 4,
+        "members": [
+          "(A(BC))(DE)",
+          "((AB)C)(DE)",
+          "((A(BC))D)E",
+          "(((AB)C)D)E"
+        ],
+        "added_bridges": [],
+        "worst_gap": "0",
+        "changed_from_previous": false,
+        "minimality_scope": "minimum cardinality among subsets of K_infinity"
+      },
+      {
+        "horizon": 18,
+        "kernel_size": 4,
+        "members": [
+          "(A(BC))(DE)",
+          "((AB)C)(DE)",
+          "((A(BC))D)E",
+          "(((AB)C)D)E"
+        ],
+        "added_bridges": [],
+        "worst_gap": "0",
+        "changed_from_previous": false,
+        "minimality_scope": "minimum cardinality among subsets of K_infinity"
+      },
+      {
+        "horizon": 19,
+        "kernel_size": 4,
+        "members": [
+          "(A(BC))(DE)",
+          "((AB)C)(DE)",
+          "((A(BC))D)E",
+          "(((AB)C)D)E"
+        ],
+        "added_bridges": [],
+        "worst_gap": "0",
+        "changed_from_previous": false,
+        "minimality_scope": "minimum cardinality among subsets of K_infinity"
+      },
+      {
+        "horizon": 20,
+        "kernel_size": 4,
+        "members": [
+          "(A(BC))(DE)",
+          "((AB)C)(DE)",
+          "((A(BC))D)E",
+          "(((AB)C)D)E"
+        ],
+        "added_bridges": [],
+        "worst_gap": "0",
+        "changed_from_previous": false,
+        "minimality_scope": "minimum cardinality among subsets of K_infinity"
+      }
+    ],
+    "infinite_kernel_equals_h20": true
+  },
+  "phase2_reaudit": {
+    "counterexample": {
+      "full": "2325.6",
+      "static_pareto": "2497.6",
+      "legacy_gap_percent": "7.395940832473341",
+      "exact_gap": "21500/2907"
+    },
+    "real_bridge": {
+      "full": "594",
+      "static_pareto": "738",
+      "ce_kernel_size": 4,
+      "minimum_kernel_size": 4
+    },
+    "hotspot_minimum_ratio": "2/429",
+    "speedup_including_build": 4.281940999280893,
+    "real_small_instances": 5440,
+    "reachable_residual_states": 2279080,
+    "budget_feasibility_checks": 38585476,
+    "dynamic_equivalence_checks": 1000000,
+    "continuous_real_updates": 1000
+  },
+  "dag": [
+    {
+      "nodes": 128,
+      "operators": 126,
+      "architectures": 8,
+      "task_alphabet": 6,
+      "trace_length": 30,
+      "full_value": "28299",
+      "ce_kernel": 4,
+      "residual_closed": false,
+      "raw_residuals": 10000,
+      "behavior_states": null,
+      "morph_kernel": null,
+      "morph_supported": false
+    },
+    {
+      "nodes": 512,
+      "operators": 510,
+      "architectures": 8,
+      "task_alphabet": 6,
+      "trace_length": 30,
+      "full_value": "108808",
+      "ce_kernel": 3,
+      "residual_closed": false,
+      "raw_residuals": 10000,
+      "behavior_states": null,
+      "morph_kernel": null,
+      "morph_supported": false
+    },
+    {
+      "nodes": 1000,
+      "operators": 998,
+      "architectures": 8,
+      "task_alphabet": 6,
+      "trace_length": 30,
+      "full_value": "211426",
+      "ce_kernel": 3,
+      "residual_closed": false,
+      "raw_residuals": 10000,
+      "behavior_states": null,
+      "morph_kernel": null,
+      "morph_supported": false
+    }
+  ],
+  "known_failures": [
+    "n=128 interval pricing exceeded the configured DP state budget",
+    "budgeted DAG residual closure exceeded 10,000 states",
+    "Lean toolchain unavailable; no machine-proof claim",
+    "full future-potential pricing oracle is not implemented"
+  ]
+}

@@ -1,0 +1,21 @@
+horizon,kernel_size,members,added_bridges,worst_gap,changed_from_previous,minimality_scope
+1,1,((A(BC))D)E,((A(BC))D)E,0,False,minimum cardinality among subsets of K_infinity
+2,3,(A(BC))(DE)|((AB)C)(DE)|((A(BC))D)E,((AB)C)(DE)|(A(BC))(DE),0,True,minimum cardinality among subsets of K_infinity
+3,3,(A(BC))(DE)|((AB)C)(DE)|((A(BC))D)E,,0,False,minimum cardinality among subsets of K_infinity
+4,4,(A(BC))(DE)|((AB)C)(DE)|((A(BC))D)E|(((AB)C)D)E,(((AB)C)D)E,0,True,minimum cardinality among subsets of K_infinity
+5,4,(A(BC))(DE)|((AB)C)(DE)|((A(BC))D)E|(((AB)C)D)E,,0,False,minimum cardinality among subsets of K_infinity
+6,4,(A(BC))(DE)|((AB)C)(DE)|((A(BC))D)E|(((AB)C)D)E,,0,False,minimum cardinality among subsets of K_infinity
+7,4,(A(BC))(DE)|((AB)C)(DE)|((A(BC))D)E|(((AB)C)D)E,,0,False,minimum cardinality among subsets of K_infinity
+8,4,(A(BC))(DE)|((AB)C)(DE)|((A(BC))D)E|(((AB)C)D)E,,0,False,minimum cardinality among subsets of K_infinity
+9,4,(A(BC))(DE)|((AB)C)(DE)|((A(BC))D)E|(((AB)C)D)E,,0,False,minimum cardinality among subsets of K_infinity
+10,4,(A(BC))(DE)|((AB)C)(DE)|((A(BC))D)E|(((AB)C)D)E,,0,False,minimum cardinality among subsets of K_infinity
+11,4,(A(BC))(DE)|((AB)C)(DE)|((A(BC))D)E|(((AB)C)D)E,,0,False,minimum cardinality among subsets of K_infinity
+12,4,(A(BC))(DE)|((AB)C)(DE)|((A(BC))D)E|(((AB)C)D)E,,0,False,minimum cardinality among subsets of K_infinity
+13,4,(A(BC))(DE)|((AB)C)(DE)|((A(BC))D)E|(((AB)C)D)E,,0,False,minimum cardinality among subsets of K_infinity
+14,4,(A(BC))(DE)|((AB)C)(DE)|((A(BC))D)E|(((AB)C)D)E,,0,False,minimum cardinality among subsets of K_infinity
+15,4,(A(BC))(DE)|((AB)C)(DE)|((A(BC))D)E|(((AB)C)D)E,,0,False,minimum cardinality among subsets of K_infinity
+16,4,(A(BC))(DE)|((AB)C)(DE)|((A(BC))D)E|(((AB)C)D)E,,0,False,minimum cardinality among subsets of K_infinity
+17,4,(A(BC))(DE)|((AB)C)(DE)|((A(BC))D)E|(((AB)C)D)E,,0,False,minimum cardinality among subsets of K_infinity
+18,4,(A(BC))(DE)|((AB)C)(DE)|((A(BC))D)E|(((AB)C)D)E,,0,False,minimum cardinality among subsets of K_infinity
+19,4,(A(BC))(DE)|((AB)C)(DE)|((A(BC))D)E|(((AB)C)D)E,,0,False,minimum cardinality among subsets of K_infinity
+20,4,(A(BC))(DE)|((AB)C)(DE)|((A(BC))D)E|(((AB)C)D)E,,0,False,minimum cardinality among subsets of K_infinity

@@ -1,0 +1,44 @@
+[
+  {
+    "nodes": 128,
+    "operators": 126,
+    "architectures": 8,
+    "task_alphabet": 6,
+    "trace_length": 30,
+    "full_value": "28299",
+    "ce_kernel": 4,
+    "residual_closed": false,
+    "raw_residuals": 10000,
+    "behavior_states": null,
+    "morph_kernel": null,
+    "morph_supported": false
+  },
+  {
+    "nodes": 512,
+    "operators": 510,
+    "architectures": 8,
+    "task_alphabet": 6,
+    "trace_length": 30,
+    "full_value": "108808",
+    "ce_kernel": 3,
+    "residual_closed": false,
+    "raw_residuals": 10000,
+    "behavior_states": null,
+    "morph_kernel": null,
+    "morph_supported": false
+  },
+  {
+    "nodes": 1000,
+    "operators": 998,
+    "architectures": 8,
+    "task_alphabet": 6,
+    "trace_length": 30,
+    "full_value": "211426",
+    "ce_kernel": 3,
+    "residual_closed": false,
+    "raw_residuals": 10000,
+    "behavior_states": null,
+    "morph_kernel": null,
+    "morph_supported": false
+  }
+]

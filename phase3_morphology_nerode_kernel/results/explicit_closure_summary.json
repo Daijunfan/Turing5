@@ -1,0 +1,319 @@
+{
+  "schema": "morphn.explicit-closure.v1",
+  "dims": [
+    1,
+    2,
+    4,
+    1,
+    6,
+    6
+  ],
+  "H": 14,
+  "K": 4,
+  "R": 56,
+  "raw_residuals": 218,
+  "ratios": {
+    "R_over_H": 4.0,
+    "K_over_H": 0.2857142857142857,
+    "K_over_R": 0.07142857142857142
+  },
+  "executable_kernel": [
+    "(A(BC))(DE)",
+    "((AB)C)(DE)",
+    "((A(BC))D)E",
+    "(((AB)C)D)E"
+  ],
+  "finite_column_difference_bound": 435,
+  "closure": {
+    "queue_empty": true,
+    "unprocessed": 0,
+    "states": 218,
+    "transitions": 1090,
+    "digest": "8f8ca646dbb91524f2b1bca12749bd27de04990807063ccbbf51d7474e54246f"
+  },
+  "horizon_rows": [
+    {
+      "horizon": 1,
+      "kernel_size": 1,
+      "members": [
+        "((A(BC))D)E"
+      ],
+      "added_bridges": [
+        "((A(BC))D)E"
+      ],
+      "worst_gap": "0",
+      "changed_from_previous": false,
+      "minimality_scope": "minimum cardinality among subsets of K_infinity"
+    },
+    {
+      "horizon": 2,
+      "kernel_size": 3,
+      "members": [
+        "(A(BC))(DE)",
+        "((AB)C)(DE)",
+        "((A(BC))D)E"
+      ],
+      "added_bridges": [
+        "((AB)C)(DE)",
+        "(A(BC))(DE)"
+      ],
+      "worst_gap": "0",
+      "changed_from_previous": true,
+      "minimality_scope": "minimum cardinality among subsets of K_infinity"
+    },
+    {
+      "horizon": 3,
+      "kernel_size": 3,
+      "members": [
+        "(A(BC))(DE)",
+        "((AB)C)(DE)",
+        "((A(BC))D)E"
+      ],
+      "added_bridges": [],
+      "worst_gap": "0",
+      "changed_from_previous": false,
+      "minimality_scope": "minimum cardinality among subsets of K_infinity"
+    },
+    {
+      "horizon": 4,
+      "kernel_size": 4,
+      "members": [
+        "(A(BC))(DE)",
+        "((AB)C)(DE)",
+        "((A(BC))D)E",
+        "(((AB)C)D)E"
+      ],
+      "added_bridges": [
+        "(((AB)C)D)E"
+      ],
+      "worst_gap": "0",
+      "changed_from_previous": true,
+      "minimality_scope": "minimum cardinality among subsets of K_infinity"
+    },
+    {
+      "horizon": 5,
+      "kernel_size": 4,
+      "members": [
+        "(A(BC))(DE)",
+        "((AB)C)(DE)",
+        "((A(BC))D)E",
+        "(((AB)C)D)E"
+      ],
+      "added_bridges": [],
+      "worst_gap": "0",
+      "changed_from_previous": false,
+      "minimality_scope": "minimum cardinality among subsets of K_infinity"
+    },
+    {
+      "horizon": 6,
+      "kernel_size": 4,
+      "members": [
+        "(A(BC))(DE)",
+        "((AB)C)(DE)",
+        "((A(BC))D)E",
+        "(((AB)C)D)E"
+      ],
+      "added_bridges": [],
+      "worst_gap": "0",
+      "changed_from_previous": false,
+      "minimality_scope": "minimum cardinality among subsets of K_infinity"
+    },
+    {
+      "horizon": 7,
+      "kernel_size": 4,
+      "members": [
+        "(A(BC))(DE)",
+        "((AB)C)(DE)",
+        "((A(BC))D)E",
+        "(((AB)C)D)E"
+      ],
+      "added_bridges": [],
+      "worst_gap": "0",
+      "changed_from_previous": false,
+      "minimality_scope": "minimum cardinality among subsets of K_infinity"
+    },
+    {
+      "horizon": 8,
+      "kernel_size": 4,
+      "members": [
+        "(A(BC))(DE)",
+        "((AB)C)(DE)",
+        "((A(BC))D)E",
+        "(((AB)C)D)E"
+      ],
+      "added_bridges": [],
+      "worst_gap": "0",
+      "changed_from_previous": false,
+      "minimality_scope": "minimum cardinality among subsets of K_infinity"
+    },
+    {
+      "horizon": 9,
+      "kernel_size": 4,
+      "members": [
+        "(A(BC))(DE)",
+        "((AB)C)(DE)",
+        "((A(BC))D)E",
+        "(((AB)C)D)E"
+      ],
+      "added_bridges": [],
+      "worst_gap": "0",
+      "changed_from_previous": false,
+      "minimality_scope": "minimum cardinality among subsets of K_infinity"
+    },
+    {
+      "horizon": 10,
+      "kernel_size": 4,
+      "members": [
+        "(A(BC))(DE)",
+        "((AB)C)(DE)",
+        "((A(BC))D)E",
+        "(((AB)C)D)E"
+      ],
+      "added_bridges": [],
+      "worst_gap": "0",
+      "changed_from_previous": false,
+      "minimality_scope": "minimum cardinality among subsets of K_infinity"
+    },
+    {
+      "horizon": 11,
+      "kernel_size": 4,
+      "members": [
+        "(A(BC))(DE)",
+        "((AB)C)(DE)",
+        "((A(BC))D)E",
+        "(((AB)C)D)E"
+      ],
+      "added_bridges": [],
+      "worst_gap": "0",
+      "changed_from_previous": false,
+      "minimality_scope": "minimum cardinality among subsets of K_infinity"
+    },
+    {
+      "horizon": 12,
+      "kernel_size": 4,
+      "members": [
+        "(A(BC))(DE)",
+        "((AB)C)(DE)",
+        "((A(BC))D)E",
+        "(((AB)C)D)E"
+      ],
+      "added_bridges": [],
+      "worst_gap": "0",
+      "changed_from_previous": false,
+      "minimality_scope": "minimum cardinality among subsets of K_infinity"
+    },
+    {
+      "horizon": 13,
+      "kernel_size": 4,
+      "members": [
+        "(A(BC))(DE)",
+        "((AB)C)(DE)",
+        "((A(BC))D)E",
+        "(((AB)C)D)E"
+      ],
+      "added_bridges": [],
+      "worst_gap": "0",
+      "changed_from_previous": false,
+      "minimality_scope": "minimum cardinality among subsets of K_infinity"
+    },
+    {
+      "horizon": 14,
+      "kernel_size": 4,
+      "members": [
+        "(A(BC))(DE)",
+        "((AB)C)(DE)",
+        "((A(BC))D)E",
+        "(((AB)C)D)E"
+      ],
+      "added_bridges": [],
+      "worst_gap": "0",
+      "changed_from_previous": false,
+      "minimality_scope": "minimum cardinality among subsets of K_infinity"
+    },
+    {
+      "horizon": 15,
+      "kernel_size": 4,
+      "members": [
+        "(A(BC))(DE)",
+        "((AB)C)(DE)",
+        "((A(BC))D)E",
+        "(((AB)C)D)E"
+      ],
+      "added_bridges": [],
+      "worst_gap": "0",
+      "changed_from_previous": false,
+      "minimality_scope": "minimum cardinality among subsets of K_infinity"
+    },
+    {
+      "horizon": 16,
+      "kernel_size": 4,
+      "members": [
+        "(A(BC))(DE)",
+        "((AB)C)(DE)",
+        "((A(BC))D)E",
+        "(((AB)C)D)E"
+      ],
+      "added_bridges": [],
+      "worst_gap": "0",
+      "changed_from_previous": false,
+      "minimality_scope": "minimum cardinality among subsets of K_infinity"
+    },
+    {
+      "horizon": 17,
+      "kernel_size": 4,
+      "members": [
+        "(A(BC))(DE)",
+        "((AB)C)(DE)",
+        "((A(BC))D)E",
+        "(((AB)C)D)E"
+      ],
+      "added_bridges": [],
+      "worst_gap": "0",
+      "changed_from_previous": false,
+      "minimality_scope": "minimum cardinality among subsets of K_infinity"
+    },
+    {
+      "horizon": 18,
+      "kernel_size": 4,
+      "members": [
+        "(A(BC))(DE)",
+        "((AB)C)(DE)",
+        "((A(BC))D)E",
+        "(((AB)C)D)E"
+      ],
+      "added_bridges": [],
+      "worst_gap": "0",
+      "changed_from_previous": false,
+      "minimality_scope": "minimum cardinality among subsets of K_infinity"
+    },
+    {
+      "horizon": 19,
+      "kernel_size": 4,
+      "members": [
+        "(A(BC))(DE)",
+        "((AB)C)(DE)",
+        "((A(BC))D)E",
+        "(((AB)C)D)E"
+      ],
+      "added_bridges": [],
+      "worst_gap": "0",
+      "changed_from_previous": false,
+      "minimality_scope": "minimum cardinality among subsets of K_infinity"
+    },
+    {
+      "horizon": 20,
+      "kernel_size": 4,
+      "members": [
+        "(A(BC))(DE)",
+        "((AB)C)(DE)",
+        "((A(BC))D)E",
+        "(((AB)C)D)E"
+      ],
+      "added_bridges": [],
+      "worst_gap": "0",
+      "changed_from_previous": false,
+      "minimality_scope": "minimum cardinality among subsets of K_infinity"
+    }
+  ],
+  "infinite_kernel_equals_h20": true
+}

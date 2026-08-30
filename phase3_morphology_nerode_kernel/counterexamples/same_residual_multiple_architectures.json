@@ -1,0 +1,26 @@
+{
+  "type": "same_behavior_residual_multiple_execution_architectures",
+  "history": [
+    "update_0"
+  ],
+  "residual": [
+    "189",
+    "351",
+    "49",
+    "243",
+    "103",
+    "137",
+    "299",
+    "0",
+    "30",
+    "189",
+    "49",
+    "137",
+    "0",
+    "30"
+  ],
+  "optimal_execution_architectures": [
+    "(A(BC))(DE)",
+    "((A(BC))D)E"
+  ]
+}

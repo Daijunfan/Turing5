@@ -1,0 +1,69 @@
+{
+  "schema": "morphn.phase2-reaudit.v1",
+  "source_commit": "ad267d87dad608e7556563c84b006ff8eadafaf9",
+  "clean_worktree_reproduction": true,
+  "checks": {
+    "counterexample_full": true,
+    "counterexample_static": true,
+    "counterexample_gap_display": true,
+    "real_bridge_full": true,
+    "real_bridge_static": true,
+    "ce_kernel_size": true,
+    "ce_equals_minimum": true,
+    "hotspot_two_of_429": true,
+    "speedup_about_4_277": true,
+    "real_instances": true,
+    "residual_count": true,
+    "budget_checks": true,
+    "dynamic_equivalence_checks": true,
+    "continuous_updates": true,
+    "all_reported_failures_zero": true
+  },
+  "observed": {
+    "counterexample": {
+      "full": "2325.6",
+      "static_pareto": "2497.6",
+      "legacy_gap_percent": "7.395940832473341",
+      "exact_gap": "21500/2907"
+    },
+    "real_bridge": {
+      "full": "594",
+      "static_pareto": "738",
+      "ce_kernel_size": 4,
+      "minimum_kernel_size": 4
+    },
+    "hotspot_minimum_ratio": "2/429",
+    "speedup_including_build": 4.281940999280893,
+    "real_small_instances": 5440,
+    "reachable_residual_states": 2279080,
+    "budget_feasibility_checks": 38585476,
+    "dynamic_equivalence_checks": 1000000,
+    "continuous_real_updates": 1000
+  },
+  "residual_count_classification": {
+    "answer": "A",
+    "meaning": "有限 Horizon=6 内逐层搜索并汇总得到的可达成对残差状态数",
+    "is_fixed_point_closure": false,
+    "stopped_early_for_resources": false,
+    "prescribed_horizon": 6,
+    "machine_evidence": {
+      "ce_tcmk_called_with_literal_horizon_6": true,
+      "reported_count_sums_reachable_by_depth": true,
+      "separation_expands_range_bounded_by_horizon": true
+    },
+    "reason": "run_real_small_exhaustive.py calls ce_tcmk with literal horizon 6 and sums reachable_by_depth; residual.py iterates only through the supplied horizon. It never drains an unbounded successor work queue and emits no closure certificate."
+  },
+  "source_evidence": {
+    "scripts/run_real_small_exhaustive.py": "b8abf11145bcfa71a60eef10282720f398d5c29e6e1c581713c5556e311d6274",
+    "tcmk/residual.py": "64bd8057a8b8e8ff6cc6f4cf21846ddcb9ee552e5a1b3bd581088137e33ab757"
+  },
+  "fresh_result_digests": {
+    "core_experiments.json": "efe56f9ec7df667ea456b8acd7a3ddb22036bb1803131ddff7d62f9140bfb055",
+    "counterexample.json": "6a4f69845a2ca6ce1b1563aefa5c01a8354239eeb714aacf18fdff76a8722192",
+    "extended_validation.json": "a6de43ed0a716230c41f4e56b95650796b54e79c0a010b8b2b3ffbc6bd7579bd",
+    "real_small_exhaustive_n5.json": "af7d2e62e5d0498d59b6234aefcf18b92b02b457ca674e84baeaf49e6ec3c132",
+    "scale_experiments.json": "1a9d540cbc089de1f64344f8714dfd0e4ea394ca336b3ec3789289632310f81b",
+    "small_exhaustive_n2_4.json": "b711f70a7b9cfe28aff635fa6b76416a0953e6984911fe1578fd78b31f69cd1b",
+    "small_exhaustive_n5_5.json": "813c59d6a494f661424983fcbcb155aba0064b25c165904f2f1bbad47fa7b292"
+  }
+}

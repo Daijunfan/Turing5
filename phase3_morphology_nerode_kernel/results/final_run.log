@@ -1,0 +1,53 @@
+=== phase2 regression tests ===
+PASS tests.test_counterexample.test_known_pcme_dynamic_counterexample_exactly
+PASS tests.test_counterexample.test_new_oracle_charges_source_construction
+PASS tests.test_residual_kernel.test_ce_tcmk_and_minimum_oracle_are_exact
+PASS tests.test_residual_kernel.test_one_occurrence_context_rule_has_a_consecutive_stay_counterexample
+PASS tests.test_residual_kernel.test_residual_search_matches_direct_word_enumeration
+PASS tests.test_real_migration.test_certificates_and_continuous_real_updates
+PASS tests.test_real_migration.test_real_model_ce_tcmk_certificate_through_horizon_four
+PASS tests.test_real_migration.test_static_pareto_is_dynamically_incomplete_in_real_reuse_model
+PASS tests.test_independent_oracles.test_evaluation_orders_are_explicit_and_legacy_merge_is_safe
+PASS tests.test_independent_oracles.test_fast_integer_residual_search_matches_generic_oracle
+PASS tests.test_independent_oracles.test_paired_residual_search_against_explicit_word_enumeration
+tests=11 failures=0 seconds=1.560
+=== phase3 Python tests ===
+PASS tests.test_automaton.test_controller_matches_full_dynamic_program_for_all_words_through_8
+PASS tests.test_automaton.test_finite_column_difference_bound_and_behavior_quotient
+PASS tests.test_automaton.test_infinite_horizon_executable_kernel_and_finite_horizon_sequence
+PASS tests.test_automaton.test_unbounded_raw_residual_counterexample_uses_explicit_infinity
+PASS tests.test_matrix_chain.test_catalan_counts_and_real_cost_automaton
+PASS tests.test_pricing.test_interval_pricing_matches_full_catalan_through_nine
+PASS tests.test_pricing.test_pricing_memory_budget_is_exact
+PASS tests.test_dag.test_actual_shared_dag_execution_matches_reference
+tests=8 failures=0 seconds=0.579
+=== C++ exact smoke programs ===
+explicit_automaton exact_total=0
+residual_closure states=4 transitions=8 unprocessed=0
+morph_n_compiler exhaustive_words=256 status=pass
+interval_pricing exact_min_work=52
+persistent_matrix associativity=pass
+dag_runtime operators=998 correctness=pass
+=== phase2 clean-worktree result audit ===
+{"valid": true, "classification": "A", "checks": 15}
+=== explicit infinite residual closure ===
+{"H": 14, "K": 4, "R": 56, "raw_residuals": 218, "infinite_kernel_equals_h20": true}
+{"valid": true, "errors": []}
+=== counterexamples ===
+wrote 7 counterexample/search files
+=== implicit pricing scale (n=16,32,64,128) ===
+{'matrix_count': 16, 'generated_columns': 8, 'residual_states': 'not_constructed_at_scale', 'pricing_calls': 24, 'kernel_seconds': 0.047479541040956974, 'peak_rss_bytes': 23707648, 'bridges_added': 7, 'dp_states_generated': 73278, 'dp_states_retained': 11443, 'log10_catalan_architectures': 6.986540870022993, 'amortization_status': 'not_measured', 'completeness': 'exact_fixed_predecessor_pricing_only', 'requested_rounds': 2, 'completed': True, 'failure': ''}
+{'matrix_count': 32, 'generated_columns': 13, 'residual_states': 'not_constructed_at_scale', 'pricing_calls': 24, 'kernel_seconds': 2.1452034590183757, 'peak_rss_bytes': 28262400, 'bridges_added': 12, 'dp_states_generated': 4066102, 'dp_states_retained': 139179, 'log10_catalan_architectures': 16.162702858059316, 'amortization_status': 'not_measured', 'completeness': 'exact_fixed_predecessor_pricing_only', 'requested_rounds': 2, 'completed': True, 'failure': ''}
+{'matrix_count': 64, 'generated_columns': 16, 'residual_states': 'not_constructed_at_scale', 'pricing_calls': 24, 'kernel_seconds': 434.4500441669952, 'peak_rss_bytes': 171884544, 'bridges_added': 15, 'dp_states_generated': 563931668, 'dp_states_retained': 2844183, 'log10_catalan_architectures': 34.97449258224871, 'amortization_status': 'not_measured', 'completeness': 'exact_fixed_predecessor_pricing_only', 'requested_rounds': 2, 'completed': True, 'failure': ''}
+{'matrix_count': 128, 'generated_columns': 1, 'residual_states': 'not_constructed_at_scale', 'pricing_calls': 0, 'kernel_seconds': 3.0371659580268897, 'peak_rss_bytes': 171884544, 'bridges_added': 0, 'dp_states_generated': 4999617, 'dp_states_retained': 101305, 'log10_catalan_architectures': 73.05350467808387, 'amortization_status': 'not_measured', 'completeness': 'exact_fixed_predecessor_pricing_only', 'requested_rounds': 1, 'completed': False, 'failure': 'pricing DP state limit 5000000 exceeded'}
+=== actual shared-DAG rematerialization ===
+{'nodes': 128, 'operators': 126, 'architectures': 8, 'task_alphabet': 6, 'trace_length': 30, 'full_value': '28299', 'ce_kernel': 4, 'residual_closed': False, 'raw_residuals': 10000, 'behavior_states': None, 'morph_kernel': None, 'morph_supported': False}
+{'nodes': 512, 'operators': 510, 'architectures': 8, 'task_alphabet': 6, 'trace_length': 30, 'full_value': '108808', 'ce_kernel': 3, 'residual_closed': False, 'raw_residuals': 10000, 'behavior_states': None, 'morph_kernel': None, 'morph_supported': False}
+{'nodes': 1000, 'operators': 998, 'architectures': 8, 'task_alphabet': 6, 'trace_length': 30, 'full_value': '211426', 'ce_kernel': 3, 'residual_closed': False, 'raw_residuals': 10000, 'behavior_states': None, 'morph_kernel': None, 'morph_supported': False}
+=== formal proof status ===
+SKIP: Lean v4.30.0 project toolchain unavailable; no machine-proof claim
+=== independent certificate audit and summaries ===
+{"judgment": "partially_supported", "raw_records": 9}
+wrote results/kernel_growth.svg
+{"valid": true, "errors": [], "closure_states_checked": 218, "closure_transitions_checked": 1090, "dag_rows_checked": 39}
+MORPH-N full reproduction completed

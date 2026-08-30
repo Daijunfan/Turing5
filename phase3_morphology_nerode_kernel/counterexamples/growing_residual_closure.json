@@ -1,0 +1,11 @@
+{
+  "type": "residual_closure_continues_growing",
+  "closed": false,
+  "states_at_limit": 50,
+  "shortest_new_residual_word_length": 49,
+  "last_residual": [
+    "0",
+    "49"
+  ],
+  "cause": "infinite edges prevent the finite-column-difference bound"
+}

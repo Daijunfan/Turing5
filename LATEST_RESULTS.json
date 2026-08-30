@@ -1,0 +1,73 @@
+{
+  "stage": "phase3 MORPH-N infinite-horizon dual-kernel morphology compilation",
+  "final_judgment": "partially_supported",
+  "status": {
+    "supported": [
+      "explicit finite-H min-plus reduction",
+      "real 14-architecture infinite residual closure",
+      "independently checked closure certificate",
+      "fixed-predecessor exact interval pricing through n=64",
+      "actual matrix and DAG output correctness"
+    ],
+    "partially_supported": [
+      "dual-kernel compiler under a finite residual closure",
+      "implicit architecture generation for restricted pricing contexts"
+    ],
+    "falsified": [
+      "phase2 residual count was an infinite fixed point",
+      "all budgeted morphology automata have finite residual closures",
+      "budgeted shared DAG admits the tested infinite MORPH-N controller",
+      "second-domain MORPH-N wall-clock gain reaches 1.5x"
+    ]
+  },
+  "main_report": "phase3_morphology_nerode_kernel/REPORT_ZH.md",
+  "reproduce": "bash phase3_morphology_nerode_kernel/run_all.sh",
+  "sanitizers": "bash phase3_morphology_nerode_kernel/run_sanitizers.sh",
+  "proved_theorems": [
+    "dynamic morphology optimization reduces exactly to a min-plus weighted automaton",
+    "equal normalized residuals determine all future incremental costs",
+    "finite integer column differences imply a finite normalized residual closure",
+    "a completed residual controller preserves exact cost for every task word",
+    "MORPH-N terminates and is exact when H, the alphabet, and the residual closure are finite",
+    "fixed-predecessor persistent matrix-chain pricing is solved exactly by resource-indexed interval DP",
+    "behavior and executable kernel sizes are incomparable in both directions"
+  ],
+  "unproved_conjectures": [
+    "complete future-potential pricing is tractable for structured matrix chains",
+    "a useful regenerative condition covers task-dependent memory infeasibility"
+  ],
+  "key_results": {
+    "phase2_reaudit": "all 15 checks passed",
+    "phase2_residual_count_classification": "A: finite Horizon=6 search",
+    "explicit_architectures_H": 14,
+    "raw_residuals": 218,
+    "behavior_kernel_R": 56,
+    "executable_kernel_K": 4,
+    "closure_transitions": 1090,
+    "closure_unprocessed": 0,
+    "n64_generated_columns": 16,
+    "n64_pricing_calls": 24,
+    "n64_pricing_seconds": 434.4500441669952,
+    "n128_completed": false,
+    "dag_max_operators": 998,
+    "dag_correct_outputs": "100% for every feasible method",
+    "dag_morph_n_supported": false
+  },
+  "known_failures": [
+    "n=128 pricing exceeded the 5,000,000-state DP limit",
+    "budgeted DAG closure exceeded 10,000 residual states",
+    "full future-potential pricing oracle is missing",
+    "the required full n<=9 implicit-vs-Catalan crosscheck is only complete for fixed-predecessor pricing",
+    "no verified Lean machine proof",
+    "no 1.5x wall-clock gain in the second real domain"
+  ],
+  "counterexamples": [
+    "phase3_morphology_nerode_kernel/counterexamples/finite_horizon_failure.json",
+    "phase3_morphology_nerode_kernel/counterexamples/same_static_different_future.json",
+    "phase3_morphology_nerode_kernel/counterexamples/small_R_large_K.json",
+    "phase3_morphology_nerode_kernel/counterexamples/small_K_large_R.json",
+    "phase3_morphology_nerode_kernel/counterexamples/growing_residual_closure.json"
+  ],
+  "next_question": "Can a globally certified future-potential pricing oracle handle task-dependent infeasibility without enumerating all architectures and scale beyond n=128?",
+  "release_branch_or_tag": "main"
+}

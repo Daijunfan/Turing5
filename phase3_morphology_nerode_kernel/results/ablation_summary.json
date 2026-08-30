@@ -1,0 +1,34 @@
+{
+  "finite_horizon_kernel": {
+    "H6_size": 4,
+    "scope": "minimum cardinality among subsets of K_infinity"
+  },
+  "infinite_residual_kernel": {
+    "R": 56,
+    "K": 4,
+    "closure_certified": true
+  },
+  "dag_methods": [
+    "behavior_only_temp_search",
+    "ce_tcmk_h6",
+    "dtr_greedy",
+    "execution_only_no_behavior",
+    "fixed_checkpoint",
+    "full_state_oracle",
+    "greedy_bridge_addition",
+    "migration_greedy",
+    "morph_n",
+    "random_architecture_columns",
+    "retain_all",
+    "static_optimal",
+    "static_pareto"
+  ],
+  "execution_only": "measured",
+  "behavior_only_temp_search": "measured",
+  "static_pareto": "measured",
+  "ce_tcmk": "measured",
+  "random_columns": "measured",
+  "greedy_bridge": "measured",
+  "full_state_oracle": "measured",
+  "full_morph_n": "unsupported_on_budgeted_dag_due_to_non_closure"
+}

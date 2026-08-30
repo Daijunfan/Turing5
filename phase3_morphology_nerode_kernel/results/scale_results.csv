@@ -1,0 +1,5 @@
+matrix_count,generated_columns,residual_states,pricing_calls,kernel_seconds,peak_rss_bytes,bridges_added,dp_states_generated,dp_states_retained,log10_catalan_architectures,amortization_status,completeness,requested_rounds,completed,failure
+16,8,not_constructed_at_scale,24,0.047479541040956974,23707648,7,73278,11443,6.986540870022993,not_measured,exact_fixed_predecessor_pricing_only,2,True,
+32,13,not_constructed_at_scale,24,2.1452034590183757,28262400,12,4066102,139179,16.162702858059316,not_measured,exact_fixed_predecessor_pricing_only,2,True,
+64,16,not_constructed_at_scale,24,434.4500441669952,171884544,15,563931668,2844183,34.97449258224871,not_measured,exact_fixed_predecessor_pricing_only,2,True,
+128,1,not_constructed_at_scale,0,3.0371659580268897,171884544,0,4999617,101305,73.05350467808387,not_measured,exact_fixed_predecessor_pricing_only,1,False,pricing DP state limit 5000000 exceeded
